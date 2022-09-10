@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<div class="top-bar"> 
+    <span> Dojo Weather </span> 
+    <div class="link1"><a href="" onclick="alert('Burbank is selected')">BurBank</a><a href=""onclick="alert('Chicago is selected')">Chicago</a><a href=""onclick="alert('Dallas is selected')">Dallas</a></div>
+</div>
+<div class="main">
+    <div class="top">
+        <h1 class="City">San Jose</h1>  
+        <div> show temperature in <select name="temperature" id="temperature" onchange="ChangeCF(this)"><option value="C">C</option><option value="F">F</option></select> </div>
+    </div>
+    <div class="middle">
+        <div class="panel1"> 
+            <h1>Today</h1>
+            <img src="assets/some_rain.png" alt="rain">
+            <h3>some rain</h3>
+            <div class="degree"><span id="high" class="temp">24</span><span class="temp"id="low">18</span></div>
+        </div>
+        <div class="panel2"> 
+            <h1>Tomorrow</h1>
+            <img src="assets/some_sun.png" alt="sun">
+            <h3>some sun</h3>
+            <div class="degree"><span id="high" class="temp">27</span> <span class="temp"id="low">19</span></div>
+        </div>
+        <div class="panel3"> 
+            <h1>Friday</h1>
+            <img src="assets/some_clouds.png" alt="cloud">
+            <h3>some clouds</h3>
+            <div class="degree"><span id="high" class="temp">21</span> <span class="temp"id="low">16</span></div>
+        </div>
+        <div class="panel4"> 
+            <h1>Saturday</h1>
+            <img src="assets/some_sun.png" alt="sun1">
+            <h3>some clouds</h3>
+            <div class="degree"><span class="temp"id="high">26</span> <span class="temp"id="low">21</span></div>
+        </div>
+    </div>    
+    <div class="bottom">
+        <img src="assets/cookie.png" alt="cookie">
+        <div class="text1">
+            <h3>Stop! Cookie Time</h3>
+            <p>We use cookies(sadly not the edible ones) to personalize content and ads, to provde social media features and to analyse our traffic. <a href="">Read more..</a>
+            </p> 
+        </div>
+        <button id="btn" onclick="remove()"> I accept</button>
+    </div> 
+</div>
+<script src="weather.js"></script>
+
+</body>
+</html>
